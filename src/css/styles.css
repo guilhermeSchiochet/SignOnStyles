@@ -1,0 +1,159 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: Url("../assets/background.png");
+    background-size: cover;
+}
+.box 
+{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-color: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.box form
+{
+    position: absolute;
+    inset: 4px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    padding: 50px 40px;
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+}
+.box form h2
+{
+    color: #162938;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.box form .inputBox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputBox input
+{
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 20px 0px 12px;
+    background-color: transparent;
+    outline: none;
+    text-indent: 10px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #162938;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+    color: #162938;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .inputBox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #162938;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .inputBox input:valid ~ i,
+.box form .inputBox input:focus ~ i
+{
+    height: 44px ;
+}
+.links {
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 15px;
+}
+.links label input {
+    accent-color: #162938;
+    margin-right: 7px;
+}
+.links a {
+    text-decoration: none;
+    color: #162938;
+}
+.links a:hover
+{
+    text-decoration: underline;
+}
+.box form input[type="submit"]
+{ 
+    border: none;
+    outline: none;
+    padding: 14px;
+    color: #fff;
+    background-color: #273456;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 300px;
+    margin-top: 5px;
+}
+.box form input[type="submit"]:active
+{
+    opacity: 0.8;
+}
+.login-register
+{
+    font-size: .9em;
+    color: #273456;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px 0 10px;
+}
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover
+{
+    text-decoration: underline;
+}
